@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9668F44B22606FF70081E0B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9668F44A22606FF70081E0B2 /* Assets.xcassets */; };
+		9668F44E22606FF70081E0B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9668F44C22606FF70081E0B2 /* Main.storyboard */; };
+		9668F45C22606FF70081E0B2 /* OpenGL_RectangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668F45B22606FF70081E0B2 /* OpenGL_RectangleTests.m */; };
+		9668F46722606FF70081E0B2 /* OpenGL_RectangleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9668F46622606FF70081E0B2 /* OpenGL_RectangleUITests.m */; };
+		9668F488226070A50081E0B2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668F487226070A50081E0B2 /* OpenGL.framework */; };
+		9668F48A226070AC0081E0B2 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668F489226070AB0081E0B2 /* GLUT.framework */; };
+		9668F48E226071060081E0B2 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9668F48D226071060081E0B2 /* libGLTools.a */; };
+		9668F490226071390081E0B2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9668F48F226071390081E0B2 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9668F45822606FF70081E0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9668F43922606FF50081E0B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9668F44022606FF50081E0B2;
+			remoteInfo = "OpenGL-Rectangle";
+		};
+		9668F46322606FF70081E0B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9668F43922606FF50081E0B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9668F44022606FF50081E0B2;
+			remoteInfo = "OpenGL-Rectangle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9668F44122606FF50081E0B2 /* OpenGL-Rectangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGL-Rectangle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9668F44A22606FF70081E0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9668F44D22606FF70081E0B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9668F44F22606FF70081E0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9668F45222606FF70081E0B2 /* OpenGL_Rectangle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGL_Rectangle.entitlements; sourceTree = "<group>"; };
+		9668F45722606FF70081E0B2 /* OpenGL-RectangleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-RectangleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9668F45B22606FF70081E0B2 /* OpenGL_RectangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_RectangleTests.m; sourceTree = "<group>"; };
+		9668F45D22606FF70081E0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9668F46222606FF70081E0B2 /* OpenGL-RectangleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-RectangleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9668F46622606FF70081E0B2 /* OpenGL_RectangleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_RectangleUITests.m; sourceTree = "<group>"; };
+		9668F46822606FF70081E0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9668F475226070390081E0B2 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		9668F476226070390081E0B2 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		9668F477226070390081E0B2 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		9668F478226070390081E0B2 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		9668F479226070390081E0B2 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		9668F47A226070390081E0B2 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		9668F47B226070390081E0B2 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		9668F47C226070390081E0B2 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		9668F47D226070390081E0B2 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		9668F47E226070390081E0B2 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		9668F480226070390081E0B2 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		9668F481226070390081E0B2 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		9668F482226070390081E0B2 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		9668F483226070390081E0B2 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		9668F487226070A50081E0B2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9668F489226070AB0081E0B2 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		9668F48D226071060081E0B2 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = "OpenGL-Rectangle/libGLTools.a"; sourceTree = "<group>"; };
+		9668F48F226071390081E0B2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9668F43E22606FF50081E0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9668F48E226071060081E0B2 /* libGLTools.a in Frameworks */,
+				9668F48A226070AC0081E0B2 /* GLUT.framework in Frameworks */,
+				9668F488226070A50081E0B2 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9668F45422606FF70081E0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9668F45F22606FF70081E0B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9668F43822606FF50081E0B2 = {
+			isa = PBXGroup;
+			children = (
+				9668F44322606FF50081E0B2 /* OpenGL-Rectangle */,
+				9668F45A22606FF70081E0B2 /* OpenGL-RectangleTests */,
+				9668F46522606FF70081E0B2 /* OpenGL-RectangleUITests */,
+				9668F44222606FF50081E0B2 /* Products */,
+				9668F486226070A50081E0B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9668F44222606FF50081E0B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9668F44122606FF50081E0B2 /* OpenGL-Rectangle.app */,
+				9668F45722606FF70081E0B2 /* OpenGL-RectangleTests.xctest */,
+				9668F46222606FF70081E0B2 /* OpenGL-RectangleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9668F44322606FF50081E0B2 /* OpenGL-Rectangle */ = {
+			isa = PBXGroup;
+			children = (
+				9668F474226070390081E0B2 /* include */,
+				9668F44A22606FF70081E0B2 /* Assets.xcassets */,
+				9668F44C22606FF70081E0B2 /* Main.storyboard */,
+				9668F44F22606FF70081E0B2 /* Info.plist */,
+				9668F45222606FF70081E0B2 /* OpenGL_Rectangle.entitlements */,
+				9668F48F226071390081E0B2 /* main.cpp */,
+			);
+			path = "OpenGL-Rectangle";
+			sourceTree = "<group>";
+		};
+		9668F45A22606FF70081E0B2 /* OpenGL-RectangleTests */ = {
+			isa = PBXGroup;
+			children = (
+				9668F45B22606FF70081E0B2 /* OpenGL_RectangleTests.m */,
+				9668F45D22606FF70081E0B2 /* Info.plist */,
+			);
+			path = "OpenGL-RectangleTests";
+			sourceTree = "<group>";
+		};
+		9668F46522606FF70081E0B2 /* OpenGL-RectangleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9668F46622606FF70081E0B2 /* OpenGL_RectangleUITests.m */,
+				9668F46822606FF70081E0B2 /* Info.plist */,
+			);
+			path = "OpenGL-RectangleUITests";
+			sourceTree = "<group>";
+		};
+		9668F474226070390081E0B2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9668F475226070390081E0B2 /* GLBatchBase.h */,
+				9668F476226070390081E0B2 /* math3d.h */,
+				9668F477226070390081E0B2 /* GLTriangleBatch.h */,
+				9668F478226070390081E0B2 /* GLBatch.h */,
+				9668F479226070390081E0B2 /* GLMatrixStack.h */,
+				9668F47A226070390081E0B2 /* GLFrame.h */,
+				9668F47B226070390081E0B2 /* GLFrustum.h */,
+				9668F47C226070390081E0B2 /* GLGeometryTransform.h */,
+				9668F47D226070390081E0B2 /* GLShaderManager.h */,
+				9668F47E226070390081E0B2 /* StopWatch.h */,
+				9668F47F226070390081E0B2 /* GL */,
+				9668F483226070390081E0B2 /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9668F47F226070390081E0B2 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				9668F480226070390081E0B2 /* glxew.h */,
+				9668F481226070390081E0B2 /* wglew.h */,
+				9668F482226070390081E0B2 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		9668F486226070A50081E0B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9668F48D226071060081E0B2 /* libGLTools.a */,
+				9668F489226070AB0081E0B2 /* GLUT.framework */,
+				9668F487226070A50081E0B2 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9668F44022606FF50081E0B2 /* OpenGL-Rectangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9668F46B22606FF70081E0B2 /* Build configuration list for PBXNativeTarget "OpenGL-Rectangle" */;
+			buildPhases = (
+				9668F43D22606FF50081E0B2 /* Sources */,
+				9668F43E22606FF50081E0B2 /* Frameworks */,
+				9668F43F22606FF50081E0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenGL-Rectangle";
+			productName = "OpenGL-Rectangle";
+			productReference = 9668F44122606FF50081E0B2 /* OpenGL-Rectangle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9668F45622606FF70081E0B2 /* OpenGL-RectangleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9668F46E22606FF70081E0B2 /* Build configuration list for PBXNativeTarget "OpenGL-RectangleTests" */;
+			buildPhases = (
+				9668F45322606FF70081E0B2 /* Sources */,
+				9668F45422606FF70081E0B2 /* Frameworks */,
+				9668F45522606FF70081E0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9668F45922606FF70081E0B2 /* PBXTargetDependency */,
+			);
+			name = "OpenGL-RectangleTests";
+			productName = "OpenGL-RectangleTests";
+			productReference = 9668F45722606FF70081E0B2 /* OpenGL-RectangleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9668F46122606FF70081E0B2 /* OpenGL-RectangleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9668F47122606FF70081E0B2 /* Build configuration list for PBXNativeTarget "OpenGL-RectangleUITests" */;
+			buildPhases = (
+				9668F45E22606FF70081E0B2 /* Sources */,
+				9668F45F22606FF70081E0B2 /* Frameworks */,
+				9668F46022606FF70081E0B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9668F46422606FF70081E0B2 /* PBXTargetDependency */,
+			);
+			name = "OpenGL-RectangleUITests";
+			productName = "OpenGL-RectangleUITests";
+			productReference = 9668F46222606FF70081E0B2 /* OpenGL-RectangleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9668F43922606FF50081E0B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Jace;
+				TargetAttributes = {
+					9668F44022606FF50081E0B2 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					9668F45622606FF70081E0B2 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 9668F44022606FF50081E0B2;
+					};
+					9668F46122606FF70081E0B2 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 9668F44022606FF50081E0B2;
+					};
+				};
+			};
+			buildConfigurationList = 9668F43C22606FF50081E0B2 /* Build configuration list for PBXProject "OpenGL-Rectangle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9668F43822606FF50081E0B2;
+			productRefGroup = 9668F44222606FF50081E0B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9668F44022606FF50081E0B2 /* OpenGL-Rectangle */,
+				9668F45622606FF70081E0B2 /* OpenGL-RectangleTests */,
+				9668F46122606FF70081E0B2 /* OpenGL-RectangleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9668F43F22606FF50081E0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9668F44B22606FF70081E0B2 /* Assets.xcassets in Resources */,
+				9668F44E22606FF70081E0B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9668F45522606FF70081E0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9668F46022606FF70081E0B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9668F43D22606FF50081E0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9668F490226071390081E0B2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9668F45322606FF70081E0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9668F45C22606FF70081E0B2 /* OpenGL_RectangleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9668F45E22606FF70081E0B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9668F46722606FF70081E0B2 /* OpenGL_RectangleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9668F45922606FF70081E0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9668F44022606FF50081E0B2 /* OpenGL-Rectangle */;
+			targetProxy = 9668F45822606FF70081E0B2 /* PBXContainerItemProxy */;
+		};
+		9668F46422606FF70081E0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9668F44022606FF50081E0B2 /* OpenGL-Rectangle */;
+			targetProxy = 9668F46322606FF70081E0B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9668F44C22606FF70081E0B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9668F44D22606FF70081E0B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9668F46922606FF70081E0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9668F46A22606FF70081E0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9668F46C22606FF70081E0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-Rectangle/OpenGL_Rectangle.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenGL-Rectangle/include\"",
+					"\"$(SRCROOT)/OpenGL-Rectangle/libGLTools.a\"",
+				);
+				INFOPLIST_FILE = "OpenGL-Rectangle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-Rectangle",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Rectangle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9668F46D22606FF70081E0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-Rectangle/OpenGL_Rectangle.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenGL-Rectangle/include\"",
+					"\"$(SRCROOT)/OpenGL-Rectangle/libGLTools.a\"",
+				);
+				INFOPLIST_FILE = "OpenGL-Rectangle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-Rectangle",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Rectangle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9668F46F22606FF70081E0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-RectangleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-RectangleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-Rectangle.app/Contents/MacOS/OpenGL-Rectangle";
+			};
+			name = Debug;
+		};
+		9668F47022606FF70081E0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-RectangleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-RectangleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-Rectangle.app/Contents/MacOS/OpenGL-Rectangle";
+			};
+			name = Release;
+		};
+		9668F47222606FF70081E0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-RectangleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-RectangleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-Rectangle";
+			};
+			name = Debug;
+		};
+		9668F47322606FF70081E0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-RectangleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-RectangleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-Rectangle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9668F43C22606FF50081E0B2 /* Build configuration list for PBXProject "OpenGL-Rectangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9668F46922606FF70081E0B2 /* Debug */,
+				9668F46A22606FF70081E0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9668F46B22606FF70081E0B2 /* Build configuration list for PBXNativeTarget "OpenGL-Rectangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9668F46C22606FF70081E0B2 /* Debug */,
+				9668F46D22606FF70081E0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9668F46E22606FF70081E0B2 /* Build configuration list for PBXNativeTarget "OpenGL-RectangleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9668F46F22606FF70081E0B2 /* Debug */,
+				9668F47022606FF70081E0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9668F47122606FF70081E0B2 /* Build configuration list for PBXNativeTarget "OpenGL-RectangleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9668F47222606FF70081E0B2 /* Debug */,
+				9668F47322606FF70081E0B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9668F43922606FF50081E0B2 /* Project object */;
+}
