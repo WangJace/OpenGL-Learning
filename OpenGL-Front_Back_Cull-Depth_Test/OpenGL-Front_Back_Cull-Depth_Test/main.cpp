@@ -131,7 +131,7 @@ void SetupRC() {
 }
 
 // 键位设置，通过不同的键位对其进行设置
-// 控制Camera的移动，从而改变视图
+// 控制Camera的移动，从而改变视口
 void SpecialKeys(int key, int x, int y) {
     if (key == GLUT_KEY_UP) {
         viewFrame.RotateWorld(m3dDegToRad(-5.0), 1.0f, 0.0f, 0.0f);
