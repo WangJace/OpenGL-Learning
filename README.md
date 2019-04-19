@@ -4,7 +4,8 @@
 + OpenGL-GeometricPrimitives  
 7种几何图元的渲染
 + OpenGL-Front_Back_Cull-Depth_Test  
-正面背面剔除 & 深度测试
+正面背面剔除 & 深度测试  
++ OpenGL-Antialiasing-Multiple_Sample  
+抗锯齿 & 多重采样
 ![代码逻辑图](./代码逻辑图.png)
-OpenGL-Rectangle、OpenGL-GeometricPrimitives、OpenGL-Front_Back_Cull-Depth_Test
-的代码逻辑图
+代码逻辑图

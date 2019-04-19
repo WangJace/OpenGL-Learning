@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9678DA0922695AE5007D083F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9678DA0822695AE5007D083F /* Assets.xcassets */; };
+		9678DA0C22695AE5007D083F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9678DA0A22695AE5007D083F /* MainMenu.xib */; };
+		9678DA1A22695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9678DA1922695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleTests.m */; };
+		9678DA2522695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9678DA2422695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleUITests.m */; };
+		9678DA3422695B8F007D083F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9678DA3322695B8F007D083F /* OpenGL.framework */; };
+		9678DA3622695B99007D083F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9678DA3522695B99007D083F /* GLUT.framework */; };
+		9678DA3822695BB3007D083F /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9678DA3722695BB3007D083F /* libGLTools.a */; };
+		9678DA4A22695BE0007D083F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9678DA4922695BE0007D083F /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9678DA1622695AE5007D083F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9678D9FA22695AE3007D083F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9678DA0122695AE3007D083F;
+			remoteInfo = "OpenGL-Antialiasing-Multiple_Sample";
+		};
+		9678DA2122695AE5007D083F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9678D9FA22695AE3007D083F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9678DA0122695AE3007D083F;
+			remoteInfo = "OpenGL-Antialiasing-Multiple_Sample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9678DA0222695AE3007D083F /* OpenGL-Antialiasing-Multiple_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGL-Antialiasing-Multiple_Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9678DA0822695AE5007D083F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9678DA0B22695AE5007D083F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9678DA0D22695AE5007D083F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9678DA1022695AE5007D083F /* OpenGL_Antialiasing_Multiple_Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGL_Antialiasing_Multiple_Sample.entitlements; sourceTree = "<group>"; };
+		9678DA1522695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-Antialiasing-Multiple_SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9678DA1922695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_Antialiasing_Multiple_SampleTests.m; sourceTree = "<group>"; };
+		9678DA1B22695AE5007D083F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9678DA2022695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-Antialiasing-Multiple_SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9678DA2422695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_Antialiasing_Multiple_SampleUITests.m; sourceTree = "<group>"; };
+		9678DA2622695AE5007D083F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9678DA3322695B8F007D083F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		9678DA3522695B99007D083F /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		9678DA3722695BB3007D083F /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = "OpenGL-Antialiasing-Multiple_Sample/libGLTools.a"; sourceTree = "<group>"; };
+		9678DA3A22695BBD007D083F /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		9678DA3B22695BBD007D083F /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		9678DA3C22695BBD007D083F /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		9678DA3D22695BBD007D083F /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		9678DA3E22695BBD007D083F /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		9678DA3F22695BBD007D083F /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		9678DA4022695BBD007D083F /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		9678DA4122695BBD007D083F /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		9678DA4222695BBD007D083F /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		9678DA4322695BBD007D083F /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		9678DA4522695BBD007D083F /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		9678DA4622695BBD007D083F /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		9678DA4722695BBD007D083F /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		9678DA4822695BBD007D083F /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		9678DA4922695BE0007D083F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9678D9FF22695AE3007D083F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9678DA3822695BB3007D083F /* libGLTools.a in Frameworks */,
+				9678DA3622695B99007D083F /* GLUT.framework in Frameworks */,
+				9678DA3422695B8F007D083F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9678DA1222695AE5007D083F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9678DA1D22695AE5007D083F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9678D9F922695AE3007D083F = {
+			isa = PBXGroup;
+			children = (
+				9678DA0422695AE3007D083F /* OpenGL-Antialiasing-Multiple_Sample */,
+				9678DA1822695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleTests */,
+				9678DA2322695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleUITests */,
+				9678DA0322695AE3007D083F /* Products */,
+				9678DA3222695B8F007D083F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9678DA0322695AE3007D083F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9678DA0222695AE3007D083F /* OpenGL-Antialiasing-Multiple_Sample.app */,
+				9678DA1522695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleTests.xctest */,
+				9678DA2022695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9678DA0422695AE3007D083F /* OpenGL-Antialiasing-Multiple_Sample */ = {
+			isa = PBXGroup;
+			children = (
+				9678DA3922695BBD007D083F /* include */,
+				9678DA0822695AE5007D083F /* Assets.xcassets */,
+				9678DA0A22695AE5007D083F /* MainMenu.xib */,
+				9678DA0D22695AE5007D083F /* Info.plist */,
+				9678DA1022695AE5007D083F /* OpenGL_Antialiasing_Multiple_Sample.entitlements */,
+				9678DA4922695BE0007D083F /* main.cpp */,
+			);
+			path = "OpenGL-Antialiasing-Multiple_Sample";
+			sourceTree = "<group>";
+		};
+		9678DA1822695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				9678DA1922695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleTests.m */,
+				9678DA1B22695AE5007D083F /* Info.plist */,
+			);
+			path = "OpenGL-Antialiasing-Multiple_SampleTests";
+			sourceTree = "<group>";
+		};
+		9678DA2322695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9678DA2422695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleUITests.m */,
+				9678DA2622695AE5007D083F /* Info.plist */,
+			);
+			path = "OpenGL-Antialiasing-Multiple_SampleUITests";
+			sourceTree = "<group>";
+		};
+		9678DA3222695B8F007D083F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9678DA3722695BB3007D083F /* libGLTools.a */,
+				9678DA3522695B99007D083F /* GLUT.framework */,
+				9678DA3322695B8F007D083F /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9678DA3922695BBD007D083F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9678DA3A22695BBD007D083F /* GLBatchBase.h */,
+				9678DA3B22695BBD007D083F /* math3d.h */,
+				9678DA3C22695BBD007D083F /* GLTriangleBatch.h */,
+				9678DA3D22695BBD007D083F /* GLBatch.h */,
+				9678DA3E22695BBD007D083F /* GLMatrixStack.h */,
+				9678DA3F22695BBD007D083F /* GLFrame.h */,
+				9678DA4022695BBD007D083F /* GLFrustum.h */,
+				9678DA4122695BBD007D083F /* GLGeometryTransform.h */,
+				9678DA4222695BBD007D083F /* GLShaderManager.h */,
+				9678DA4322695BBD007D083F /* StopWatch.h */,
+				9678DA4422695BBD007D083F /* GL */,
+				9678DA4822695BBD007D083F /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9678DA4422695BBD007D083F /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				9678DA4522695BBD007D083F /* glxew.h */,
+				9678DA4622695BBD007D083F /* wglew.h */,
+				9678DA4722695BBD007D083F /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9678DA0122695AE3007D083F /* OpenGL-Antialiasing-Multiple_Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9678DA2922695AE5007D083F /* Build configuration list for PBXNativeTarget "OpenGL-Antialiasing-Multiple_Sample" */;
+			buildPhases = (
+				9678D9FE22695AE3007D083F /* Sources */,
+				9678D9FF22695AE3007D083F /* Frameworks */,
+				9678DA0022695AE3007D083F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenGL-Antialiasing-Multiple_Sample";
+			productName = "OpenGL-Antialiasing-Multiple_Sample";
+			productReference = 9678DA0222695AE3007D083F /* OpenGL-Antialiasing-Multiple_Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9678DA1422695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9678DA2C22695AE5007D083F /* Build configuration list for PBXNativeTarget "OpenGL-Antialiasing-Multiple_SampleTests" */;
+			buildPhases = (
+				9678DA1122695AE5007D083F /* Sources */,
+				9678DA1222695AE5007D083F /* Frameworks */,
+				9678DA1322695AE5007D083F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9678DA1722695AE5007D083F /* PBXTargetDependency */,
+			);
+			name = "OpenGL-Antialiasing-Multiple_SampleTests";
+			productName = "OpenGL-Antialiasing-Multiple_SampleTests";
+			productReference = 9678DA1522695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9678DA1F22695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9678DA2F22695AE5007D083F /* Build configuration list for PBXNativeTarget "OpenGL-Antialiasing-Multiple_SampleUITests" */;
+			buildPhases = (
+				9678DA1C22695AE5007D083F /* Sources */,
+				9678DA1D22695AE5007D083F /* Frameworks */,
+				9678DA1E22695AE5007D083F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9678DA2222695AE5007D083F /* PBXTargetDependency */,
+			);
+			name = "OpenGL-Antialiasing-Multiple_SampleUITests";
+			productName = "OpenGL-Antialiasing-Multiple_SampleUITests";
+			productReference = 9678DA2022695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9678D9FA22695AE3007D083F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Jace;
+				TargetAttributes = {
+					9678DA0122695AE3007D083F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9678DA1422695AE5007D083F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9678DA0122695AE3007D083F;
+					};
+					9678DA1F22695AE5007D083F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 9678DA0122695AE3007D083F;
+					};
+				};
+			};
+			buildConfigurationList = 9678D9FD22695AE3007D083F /* Build configuration list for PBXProject "OpenGL-Antialiasing-Multiple_Sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9678D9F922695AE3007D083F;
+			productRefGroup = 9678DA0322695AE3007D083F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9678DA0122695AE3007D083F /* OpenGL-Antialiasing-Multiple_Sample */,
+				9678DA1422695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleTests */,
+				9678DA1F22695AE5007D083F /* OpenGL-Antialiasing-Multiple_SampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9678DA0022695AE3007D083F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9678DA0922695AE5007D083F /* Assets.xcassets in Resources */,
+				9678DA0C22695AE5007D083F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9678DA1322695AE5007D083F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9678DA1E22695AE5007D083F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9678D9FE22695AE3007D083F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9678DA4A22695BE0007D083F /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9678DA1122695AE5007D083F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9678DA1A22695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9678DA1C22695AE5007D083F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9678DA2522695AE5007D083F /* OpenGL_Antialiasing_Multiple_SampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9678DA1722695AE5007D083F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9678DA0122695AE3007D083F /* OpenGL-Antialiasing-Multiple_Sample */;
+			targetProxy = 9678DA1622695AE5007D083F /* PBXContainerItemProxy */;
+		};
+		9678DA2222695AE5007D083F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9678DA0122695AE3007D083F /* OpenGL-Antialiasing-Multiple_Sample */;
+			targetProxy = 9678DA2122695AE5007D083F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9678DA0A22695AE5007D083F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9678DA0B22695AE5007D083F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9678DA2722695AE5007D083F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9678DA2822695AE5007D083F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9678DA2A22695AE5007D083F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-Antialiasing-Multiple_Sample/OpenGL_Antialiasing_Multiple_Sample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenGL-Antialiasing-Multiple_Sample/include\"",
+					"\"$(SRCROOT)/OpenGL-Antialiasing-Multiple_Sample/libGLTools.a\"",
+				);
+				INFOPLIST_FILE = "OpenGL-Antialiasing-Multiple_Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-Antialiasing-Multiple_Sample",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Antialiasing-Multiple-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9678DA2B22695AE5007D083F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-Antialiasing-Multiple_Sample/OpenGL_Antialiasing_Multiple_Sample.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenGL-Antialiasing-Multiple_Sample/include\"",
+					"\"$(SRCROOT)/OpenGL-Antialiasing-Multiple_Sample/libGLTools.a\"",
+				);
+				INFOPLIST_FILE = "OpenGL-Antialiasing-Multiple_Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-Antialiasing-Multiple_Sample",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Antialiasing-Multiple-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9678DA2D22695AE5007D083F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Antialiasing-Multiple_SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Antialiasing-Multiple-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-Antialiasing-Multiple_Sample.app/Contents/MacOS/OpenGL-Antialiasing-Multiple_Sample";
+			};
+			name = Debug;
+		};
+		9678DA2E22695AE5007D083F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Antialiasing-Multiple_SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Antialiasing-Multiple-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-Antialiasing-Multiple_Sample.app/Contents/MacOS/OpenGL-Antialiasing-Multiple_Sample";
+			};
+			name = Release;
+		};
+		9678DA3022695AE5007D083F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Antialiasing-Multiple_SampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Antialiasing-Multiple-SampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-Antialiasing-Multiple_Sample";
+			};
+			name = Debug;
+		};
+		9678DA3122695AE5007D083F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Antialiasing-Multiple_SampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Antialiasing-Multiple-SampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-Antialiasing-Multiple_Sample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9678D9FD22695AE3007D083F /* Build configuration list for PBXProject "OpenGL-Antialiasing-Multiple_Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9678DA2722695AE5007D083F /* Debug */,
+				9678DA2822695AE5007D083F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9678DA2922695AE5007D083F /* Build configuration list for PBXNativeTarget "OpenGL-Antialiasing-Multiple_Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9678DA2A22695AE5007D083F /* Debug */,
+				9678DA2B22695AE5007D083F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9678DA2C22695AE5007D083F /* Build configuration list for PBXNativeTarget "OpenGL-Antialiasing-Multiple_SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9678DA2D22695AE5007D083F /* Debug */,
+				9678DA2E22695AE5007D083F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9678DA2F22695AE5007D083F /* Build configuration list for PBXNativeTarget "OpenGL-Antialiasing-Multiple_SampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9678DA3022695AE5007D083F /* Debug */,
+				9678DA3122695AE5007D083F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9678D9FA22695AE3007D083F /* Project object */;
+}
