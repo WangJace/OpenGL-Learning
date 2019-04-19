@@ -64,10 +64,10 @@ void RenderScene(void) {
     shaderManager.UseStockShader(GLT_SHADER_FLAT, viewFrustum.GetProjectionMatrix(), vWhite);
     
     if (isOpenAntialiasing == 1) {
-        // 多重采样和颜色混合一起使用
+        // 多重采样和混合一起使用
         // 先关闭多重采样
         glDisable(GLUT_MULTISAMPLE);
-        // 开启颜色混合
+        // 开启混合
         glEnable(GL_BLEND);
         // 设置混合因子
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
