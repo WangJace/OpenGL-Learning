@@ -10,4 +10,4 @@
 + OpenGL-Antialiasing-Multiple_Sample  
 抗锯齿 & 多重采样  
 ![代码逻辑图](./代码逻辑图.png)
-<center>代码逻辑图</center>
+<p align="center">代码逻辑图</p>
