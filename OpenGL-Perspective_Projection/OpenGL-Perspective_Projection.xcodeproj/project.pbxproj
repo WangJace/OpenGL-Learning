@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		962F37BB226EB83C00DA3F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962F37BA226EB83C00DA3F54 /* Assets.xcassets */; };
+		962F37BE226EB83C00DA3F54 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 962F37BC226EB83C00DA3F54 /* MainMenu.xib */; };
+		962F37CC226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 962F37CB226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionTests.m */; };
+		962F37D7226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 962F37D6226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionUITests.m */; };
+		962F37E6226EB85000DA3F54 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962F37E5226EB85000DA3F54 /* OpenGL.framework */; };
+		962F37E8226EB85600DA3F54 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 962F37E7226EB85600DA3F54 /* GLUT.framework */; };
+		962F37FA226EB87300DA3F54 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962F37F9226EB87300DA3F54 /* libGLTools.a */; };
+		962F37FC226EB88F00DA3F54 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 962F37FB226EB88F00DA3F54 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		962F37C8226EB83C00DA3F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962F37AC226EB83B00DA3F54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 962F37B3226EB83B00DA3F54;
+			remoteInfo = "OpenGL-Perspective_Projection";
+		};
+		962F37D3226EB83C00DA3F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 962F37AC226EB83B00DA3F54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 962F37B3226EB83B00DA3F54;
+			remoteInfo = "OpenGL-Perspective_Projection";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		962F37B4226EB83B00DA3F54 /* OpenGL-Perspective_Projection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGL-Perspective_Projection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		962F37BA226EB83C00DA3F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		962F37BD226EB83C00DA3F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		962F37BF226EB83C00DA3F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		962F37C2226EB83C00DA3F54 /* OpenGL_Perspective_Projection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGL_Perspective_Projection.entitlements; sourceTree = "<group>"; };
+		962F37C7226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-Perspective_ProjectionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		962F37CB226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_Perspective_ProjectionTests.m; sourceTree = "<group>"; };
+		962F37CD226EB83C00DA3F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		962F37D2226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-Perspective_ProjectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		962F37D6226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_Perspective_ProjectionUITests.m; sourceTree = "<group>"; };
+		962F37D8226EB83C00DA3F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		962F37E5226EB85000DA3F54 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		962F37E7226EB85600DA3F54 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		962F37EA226EB86C00DA3F54 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		962F37EB226EB86C00DA3F54 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		962F37EC226EB86C00DA3F54 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		962F37ED226EB86C00DA3F54 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		962F37EE226EB86C00DA3F54 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		962F37EF226EB86C00DA3F54 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		962F37F0226EB86D00DA3F54 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		962F37F1226EB86D00DA3F54 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		962F37F2226EB86D00DA3F54 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		962F37F3226EB86D00DA3F54 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		962F37F5226EB86D00DA3F54 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		962F37F6226EB86D00DA3F54 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		962F37F7226EB86D00DA3F54 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		962F37F8226EB86D00DA3F54 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		962F37F9226EB87300DA3F54 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = "OpenGL-Perspective_Projection/libGLTools.a"; sourceTree = "<group>"; };
+		962F37FB226EB88F00DA3F54 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		962F37B1226EB83B00DA3F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F37FA226EB87300DA3F54 /* libGLTools.a in Frameworks */,
+				962F37E8226EB85600DA3F54 /* GLUT.framework in Frameworks */,
+				962F37E6226EB85000DA3F54 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962F37C4226EB83C00DA3F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962F37CF226EB83C00DA3F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		962F37AB226EB83B00DA3F54 = {
+			isa = PBXGroup;
+			children = (
+				962F37B6226EB83B00DA3F54 /* OpenGL-Perspective_Projection */,
+				962F37CA226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionTests */,
+				962F37D5226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionUITests */,
+				962F37B5226EB83B00DA3F54 /* Products */,
+				962F37E4226EB85000DA3F54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		962F37B5226EB83B00DA3F54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				962F37B4226EB83B00DA3F54 /* OpenGL-Perspective_Projection.app */,
+				962F37C7226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionTests.xctest */,
+				962F37D2226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		962F37B6226EB83B00DA3F54 /* OpenGL-Perspective_Projection */ = {
+			isa = PBXGroup;
+			children = (
+				962F37E9226EB86C00DA3F54 /* include */,
+				962F37BA226EB83C00DA3F54 /* Assets.xcassets */,
+				962F37BC226EB83C00DA3F54 /* MainMenu.xib */,
+				962F37BF226EB83C00DA3F54 /* Info.plist */,
+				962F37C2226EB83C00DA3F54 /* OpenGL_Perspective_Projection.entitlements */,
+				962F37FB226EB88F00DA3F54 /* main.cpp */,
+			);
+			path = "OpenGL-Perspective_Projection";
+			sourceTree = "<group>";
+		};
+		962F37CA226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				962F37CB226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionTests.m */,
+				962F37CD226EB83C00DA3F54 /* Info.plist */,
+			);
+			path = "OpenGL-Perspective_ProjectionTests";
+			sourceTree = "<group>";
+		};
+		962F37D5226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				962F37D6226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionUITests.m */,
+				962F37D8226EB83C00DA3F54 /* Info.plist */,
+			);
+			path = "OpenGL-Perspective_ProjectionUITests";
+			sourceTree = "<group>";
+		};
+		962F37E4226EB85000DA3F54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				962F37F9226EB87300DA3F54 /* libGLTools.a */,
+				962F37E7226EB85600DA3F54 /* GLUT.framework */,
+				962F37E5226EB85000DA3F54 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		962F37E9226EB86C00DA3F54 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				962F37EA226EB86C00DA3F54 /* GLBatchBase.h */,
+				962F37EB226EB86C00DA3F54 /* math3d.h */,
+				962F37EC226EB86C00DA3F54 /* GLTriangleBatch.h */,
+				962F37ED226EB86C00DA3F54 /* GLBatch.h */,
+				962F37EE226EB86C00DA3F54 /* GLMatrixStack.h */,
+				962F37EF226EB86C00DA3F54 /* GLFrame.h */,
+				962F37F0226EB86D00DA3F54 /* GLFrustum.h */,
+				962F37F1226EB86D00DA3F54 /* GLGeometryTransform.h */,
+				962F37F2226EB86D00DA3F54 /* GLShaderManager.h */,
+				962F37F3226EB86D00DA3F54 /* StopWatch.h */,
+				962F37F4226EB86D00DA3F54 /* GL */,
+				962F37F8226EB86D00DA3F54 /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		962F37F4226EB86D00DA3F54 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				962F37F5226EB86D00DA3F54 /* glxew.h */,
+				962F37F6226EB86D00DA3F54 /* wglew.h */,
+				962F37F7226EB86D00DA3F54 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		962F37B3226EB83B00DA3F54 /* OpenGL-Perspective_Projection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 962F37DB226EB83C00DA3F54 /* Build configuration list for PBXNativeTarget "OpenGL-Perspective_Projection" */;
+			buildPhases = (
+				962F37B0226EB83B00DA3F54 /* Sources */,
+				962F37B1226EB83B00DA3F54 /* Frameworks */,
+				962F37B2226EB83B00DA3F54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenGL-Perspective_Projection";
+			productName = "OpenGL-Perspective_Projection";
+			productReference = 962F37B4226EB83B00DA3F54 /* OpenGL-Perspective_Projection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		962F37C6226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 962F37DE226EB83C00DA3F54 /* Build configuration list for PBXNativeTarget "OpenGL-Perspective_ProjectionTests" */;
+			buildPhases = (
+				962F37C3226EB83C00DA3F54 /* Sources */,
+				962F37C4226EB83C00DA3F54 /* Frameworks */,
+				962F37C5226EB83C00DA3F54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				962F37C9226EB83C00DA3F54 /* PBXTargetDependency */,
+			);
+			name = "OpenGL-Perspective_ProjectionTests";
+			productName = "OpenGL-Perspective_ProjectionTests";
+			productReference = 962F37C7226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		962F37D1226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 962F37E1226EB83C00DA3F54 /* Build configuration list for PBXNativeTarget "OpenGL-Perspective_ProjectionUITests" */;
+			buildPhases = (
+				962F37CE226EB83C00DA3F54 /* Sources */,
+				962F37CF226EB83C00DA3F54 /* Frameworks */,
+				962F37D0226EB83C00DA3F54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				962F37D4226EB83C00DA3F54 /* PBXTargetDependency */,
+			);
+			name = "OpenGL-Perspective_ProjectionUITests";
+			productName = "OpenGL-Perspective_ProjectionUITests";
+			productReference = 962F37D2226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		962F37AC226EB83B00DA3F54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Jace;
+				TargetAttributes = {
+					962F37B3226EB83B00DA3F54 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					962F37C6226EB83C00DA3F54 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 962F37B3226EB83B00DA3F54;
+					};
+					962F37D1226EB83C00DA3F54 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 962F37B3226EB83B00DA3F54;
+					};
+				};
+			};
+			buildConfigurationList = 962F37AF226EB83B00DA3F54 /* Build configuration list for PBXProject "OpenGL-Perspective_Projection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 962F37AB226EB83B00DA3F54;
+			productRefGroup = 962F37B5226EB83B00DA3F54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				962F37B3226EB83B00DA3F54 /* OpenGL-Perspective_Projection */,
+				962F37C6226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionTests */,
+				962F37D1226EB83C00DA3F54 /* OpenGL-Perspective_ProjectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		962F37B2226EB83B00DA3F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F37BB226EB83C00DA3F54 /* Assets.xcassets in Resources */,
+				962F37BE226EB83C00DA3F54 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962F37C5226EB83C00DA3F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962F37D0226EB83C00DA3F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		962F37B0226EB83B00DA3F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F37FC226EB88F00DA3F54 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962F37C3226EB83C00DA3F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F37CC226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		962F37CE226EB83C00DA3F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F37D7226EB83C00DA3F54 /* OpenGL_Perspective_ProjectionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		962F37C9226EB83C00DA3F54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 962F37B3226EB83B00DA3F54 /* OpenGL-Perspective_Projection */;
+			targetProxy = 962F37C8226EB83C00DA3F54 /* PBXContainerItemProxy */;
+		};
+		962F37D4226EB83C00DA3F54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 962F37B3226EB83B00DA3F54 /* OpenGL-Perspective_Projection */;
+			targetProxy = 962F37D3226EB83C00DA3F54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		962F37BC226EB83C00DA3F54 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				962F37BD226EB83C00DA3F54 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		962F37D9226EB83C00DA3F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		962F37DA226EB83C00DA3F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		962F37DC226EB83C00DA3F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-Perspective_Projection/OpenGL_Perspective_Projection.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenGL-Perspective_Projection/include\"",
+					"\"$(SRCROOT)/OpenGL-Perspective_Projection/libGLTools.a\"",
+				);
+				INFOPLIST_FILE = "OpenGL-Perspective_Projection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-Perspective_Projection",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Perspective-Projection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		962F37DD226EB83C00DA3F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-Perspective_Projection/OpenGL_Perspective_Projection.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenGL-Perspective_Projection/include\"",
+					"\"$(SRCROOT)/OpenGL-Perspective_Projection/libGLTools.a\"",
+				);
+				INFOPLIST_FILE = "OpenGL-Perspective_Projection/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-Perspective_Projection",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Perspective-Projection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		962F37DF226EB83C00DA3F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Perspective_ProjectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Perspective-ProjectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-Perspective_Projection.app/Contents/MacOS/OpenGL-Perspective_Projection";
+			};
+			name = Debug;
+		};
+		962F37E0226EB83C00DA3F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Perspective_ProjectionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Perspective-ProjectionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-Perspective_Projection.app/Contents/MacOS/OpenGL-Perspective_Projection";
+			};
+			name = Release;
+		};
+		962F37E2226EB83C00DA3F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Perspective_ProjectionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Perspective-ProjectionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-Perspective_Projection";
+			};
+			name = Debug;
+		};
+		962F37E3226EB83C00DA3F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Perspective_ProjectionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Perspective-ProjectionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-Perspective_Projection";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		962F37AF226EB83B00DA3F54 /* Build configuration list for PBXProject "OpenGL-Perspective_Projection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				962F37D9226EB83C00DA3F54 /* Debug */,
+				962F37DA226EB83C00DA3F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		962F37DB226EB83C00DA3F54 /* Build configuration list for PBXNativeTarget "OpenGL-Perspective_Projection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				962F37DC226EB83C00DA3F54 /* Debug */,
+				962F37DD226EB83C00DA3F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		962F37DE226EB83C00DA3F54 /* Build configuration list for PBXNativeTarget "OpenGL-Perspective_ProjectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				962F37DF226EB83C00DA3F54 /* Debug */,
+				962F37E0226EB83C00DA3F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		962F37E1226EB83C00DA3F54 /* Build configuration list for PBXNativeTarget "OpenGL-Perspective_ProjectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				962F37E2226EB83C00DA3F54 /* Debug */,
+				962F37E3226EB83C00DA3F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 962F37AC226EB83B00DA3F54 /* Project object */;
+}
