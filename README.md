@@ -19,5 +19,7 @@
 透视投影
 + OpenGL-Sphere_World  
 球体世界(综合示例)
++ OpenGL-Pyramid  
+金字塔
 ![代码逻辑图](./代码逻辑图.png)
 <p align="center">代码逻辑图</p>
