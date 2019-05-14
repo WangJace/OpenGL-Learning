@@ -36,7 +36,7 @@ GLuint             textureID;
 GLGeometryTransform transformPipeline;
 M3DMatrix44f        shadowMatrix;
 
-// 绘制金字塔
+// 绘制金字塔（具体的图形解析见工程根目录下的“金字塔图形解析.pdf”）
 void MakePyramid(GLBatch& pyramidBatch) {
     /*
      1.pyramidBatch
@@ -45,57 +45,19 @@ void MakePyramid(GLBatch& pyramidBatch) {
      参数2: 顶点个数
      参数3: 需要使用到纹理，传1，默认为0（0的时候可以不写此参数）
      */
-    pyramidBatch.Begin(GL_TRIANGLES, 18, 1);
-    /*
-     2.金字塔底部
-     底部四边形 = 三角形X + 三角形Y
-     */
-    // 三角形X
-    //==========vBackLeft==========
-    // 设置法线坐标 -- 光照
-    pyramidBatch.Normal3f(0.0f, -1.0f, 0.0f);
-    /*
-     设置顶点对应的纹理坐标
-     void MultiTexCoord2f(GLuint texture, GLclampf s, GLclampf t);
-     参数1: 纹理的层次
-     参数2: s坐标
-     参数3: t坐标
-     */
-    pyramidBatch.MultiTexCoord2f(0, 0.0f, 0.0f);
-    // 设置顶点坐标
-    pyramidBatch.Vertex3f(-1.0f, -1.0f, -1.0f);
-    //==========vBackRight==========
-    pyramidBatch.Normal3f(0.0f, -1.0f, 0.0f);
-    pyramidBatch.MultiTexCoord2f(0, 1.0f, 0.0f);
-    pyramidBatch.Vertex3f(1.0f, -1.0f, -1.0f);
-    //==========vFrontRight==========
-    pyramidBatch.Normal3f(0.0f, -1.0f, 0.0f);
-    pyramidBatch.MultiTexCoord2f(0, 1.0f, 1.0f);
-    pyramidBatch.Vertex3f(1.0f, -1.0f, 1.0f);
+    pyramidBatch.Begin(GL_TRIANGLES, 18,1);
     
-    // 三角形Y
-    pyramidBatch.Normal3f(0.0f, -1.0f, 0.0f);
-    pyramidBatch.MultiTexCoord2f(0, 0.0f, 1.0f);
-    pyramidBatch.Vertex3f(-1.0f, -1.0f, 1.0f);
-    
-    pyramidBatch.Normal3f(0.0f, -1.0f, 0.0f);
-    pyramidBatch.MultiTexCoord2f(0, 0.0f, 0.0f);
-    pyramidBatch.Vertex3f(-1.0f, -1.0f, -1.0f);
-    
-    pyramidBatch.Normal3f(0.0f, -1.0f, 0.0f);
-    pyramidBatch.MultiTexCoord2f(0, 1.0f, 1.0f);
-    pyramidBatch.Vertex3f(1.0f, -1.0f, 1.0f);
-    
-    // 塔顶
     M3DVector3f vApex = {0.0f,1.0f,0.0f};
     M3DVector3f vFrontLeft = {-1.0f,-1.0f,1.0f};
     M3DVector3f vFrontRight = {1.0f,-1.0f,1.0f};
     M3DVector3f vBackLeft = {-1.0f,-1.0f,-1.0f};
     M3DVector3f vBackRight = {1.0f,-1.0f,-1.0f};
-    
     M3DVector3f n;     // 目的：为了临时存储法线向量
-    // 金字塔的前面
-    // 三角形：(Apex, vFrontLeft, vFrontRight)
+    /*
+     2.金字塔底部
+     底部四边形 = 三角形X + 三角形Y
+     */
+    
     /*
      找法线
      void m3dFindNormal(M3DVector3f result, const M3DVector3f point1, const M3DVector3f point2,
@@ -103,10 +65,50 @@ void MakePyramid(GLBatch& pyramidBatch) {
      参数1: 结果
      参数2～4: 3个顶点
      */
+    m3dFindNormal(n, vBackLeft, vBackRight, vFrontRight);
+    
+    // 三角形X
+    //==========vBackLeft==========
+    // 设置法线坐标 -- 光照
+    pyramidBatch.Normal3fv(n);  // 或者 pyramidBatch.Normal3f(0.0f, -1.0f, 0.0f); 自己计算法线
+    /*
+     设置顶点对应的纹理坐标
+     void MultiTexCoord2f(GLuint texture, GLclampf s, GLclampf t);
+     参数1: 纹理的层次
+     参数2: s坐标
+     参数3: t坐标
+     */
+    pyramidBatch.MultiTexCoord2f(0, 0.0f, 1.0f);
+    // 设置顶点坐标
+    pyramidBatch.Vertex3f(-1.0f, -1.0f, -1.0f);
+    //==========vBackRight==========
+    pyramidBatch.Normal3fv(n);
+    pyramidBatch.MultiTexCoord2f(0, 1.0f, 1.0f);
+    pyramidBatch.Vertex3f(1.0f, -1.0f, -1.0f);
+    //==========vFrontRight==========
+    pyramidBatch.Normal3fv(n);
+    pyramidBatch.MultiTexCoord2f(0, 1.0f, 0.0f);
+    pyramidBatch.Vertex3f(1.0f, -1.0f, 1.0f);
+    
+    // 三角形Y
+    pyramidBatch.Normal3fv(n);
+    pyramidBatch.MultiTexCoord2f(0, 0.0f, 0.0f);
+    pyramidBatch.Vertex3f(-1.0f, -1.0f, 1.0f);
+    
+    pyramidBatch.Normal3fv(n);
+    pyramidBatch.MultiTexCoord2f(0, 0.0f, 1.0f);
+    pyramidBatch.Vertex3f(-1.0f, -1.0f, -1.0f);
+    
+    pyramidBatch.Normal3fv(n);
+    pyramidBatch.MultiTexCoord2f(0, 1.0f, 0.0f);
+    pyramidBatch.Vertex3f(1.0f, -1.0f, 1.0f);
+    
+    // 金字塔的前面
+    // 三角形：(Apex, vFrontLeft, vFrontRight)
     m3dFindNormal(n, vApex, vFrontLeft, vFrontRight);
     // vApex
     pyramidBatch.Normal3fv(n);
-    pyramidBatch.MultiTexCoord2f(0, 0.5, 1.0f);
+    pyramidBatch.MultiTexCoord2f(0, 0.5f, 0.5f);
     pyramidBatch.Vertex3fv(vApex);
     //vFrontLeft
     pyramidBatch.Normal3fv(n);
@@ -122,11 +124,11 @@ void MakePyramid(GLBatch& pyramidBatch) {
     m3dFindNormal(n, vApex, vBackLeft, vFrontLeft);
     // vApex
     pyramidBatch.Normal3fv(n);
-    pyramidBatch.MultiTexCoord2f(0, 0.5f, 1.0f);
+    pyramidBatch.MultiTexCoord2f(0, 0.5f, 0.5f);
     pyramidBatch.Vertex3fv(vApex);
     // vBackLeft
     pyramidBatch.Normal3fv(n);
-    pyramidBatch.MultiTexCoord2f(0, 1.0f, 0.0f);
+    pyramidBatch.MultiTexCoord2f(0, 0.0f, 1.0f);
     pyramidBatch.Vertex3fv(vBackLeft);
     // vFrontLeft
     pyramidBatch.Normal3fv(n);
@@ -138,7 +140,7 @@ void MakePyramid(GLBatch& pyramidBatch) {
     m3dFindNormal(n, vApex, vFrontRight, vBackRight);
     // vApex
     pyramidBatch.Normal3fv(n);
-    pyramidBatch.MultiTexCoord2f(0, 0.5f, 1.0f);
+    pyramidBatch.MultiTexCoord2f(0, 0.5f, 0.5f);
     pyramidBatch.Vertex3fv(vApex);
     // vFrontRight
     pyramidBatch.Normal3fv(n);
@@ -146,7 +148,7 @@ void MakePyramid(GLBatch& pyramidBatch) {
     pyramidBatch.Vertex3fv(vFrontRight);
     // vBackRight
     pyramidBatch.Normal3fv(n);
-    pyramidBatch.MultiTexCoord2f(0, 0.0f, 0.0f);
+    pyramidBatch.MultiTexCoord2f(0, 1.0f, 1.0f);
     pyramidBatch.Vertex3fv(vBackRight);
     
     // 金字塔后边
@@ -154,15 +156,15 @@ void MakePyramid(GLBatch& pyramidBatch) {
     m3dFindNormal(n, vApex, vBackRight, vBackLeft);
     // vApex
     pyramidBatch.Normal3fv(n);
-    pyramidBatch.MultiTexCoord2f(0, 0.5f, 1.0f);
+    pyramidBatch.MultiTexCoord2f(0, 0.5f, 0.5f);
     pyramidBatch.Vertex3fv(vApex);
     // vBackRight
     pyramidBatch.Normal3fv(n);
-    pyramidBatch.MultiTexCoord2f(0, 0.0f, 0.0f);
+    pyramidBatch.MultiTexCoord2f(0, 1.0f, 1.0f);
     pyramidBatch.Vertex3fv(vBackRight);
     // vBackLeft
     pyramidBatch.Normal3fv(n);
-    pyramidBatch.MultiTexCoord2f(0, 1.0f, 0.0f);
+    pyramidBatch.MultiTexCoord2f(0, 0.0f, 1.0f);
     pyramidBatch.Vertex3fv(vBackLeft);
     
     // 结束批次设置
@@ -286,7 +288,7 @@ void SetupRC() {
     // 4.设置渲染图像的顶点 ———— 金字塔
     MakePyramid(pyramidBatch);
     
-    cameraFrame.MoveForward(-10.0f);
+    cameraFrame.MoveForward(-10.0);
 }
 
 // 清理（例如删除纹理对象）
