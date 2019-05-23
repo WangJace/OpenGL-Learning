@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96246FA82294FB3100B2E404 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96246FA72294FB3100B2E404 /* OpenGL.framework */; };
+		96246FAA2294FB3800B2E404 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96246FA92294FB3800B2E404 /* GLUT.framework */; };
+		96246FBC2294FB6900B2E404 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96246FBB2294FB6900B2E404 /* libGLTools.a */; };
+		96246FC02294FB8300B2E404 /* Marslike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 96246FBD2294FB8300B2E404 /* Marslike.tga */; };
+		96246FC12294FB8300B2E404 /* MoonLike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 96246FBE2294FB8300B2E404 /* MoonLike.tga */; };
+		96246FC22294FB8300B2E404 /* Marble.tga in Resources */ = {isa = PBXBuildFile; fileRef = 96246FBF2294FB8300B2E404 /* Marble.tga */; };
+		96246FC42294FBC100B2E404 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96246FC32294FBC100B2E404 /* main.cpp */; };
+		965976812293E185002DF244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965976802293E185002DF244 /* Assets.xcassets */; };
+		965976842293E185002DF244 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965976822293E185002DF244 /* MainMenu.xib */; };
+		965976922293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 965976912293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceTests.m */; };
+		9659769D2293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9659769C2293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9659768E2293E186002DF244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965976722293E184002DF244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965976792293E184002DF244;
+			remoteInfo = "OpenGL-Sphere_World-Mirror_Surface";
+		};
+		965976992293E186002DF244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965976722293E184002DF244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965976792293E184002DF244;
+			remoteInfo = "OpenGL-Sphere_World-Mirror_Surface";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96246FA72294FB3100B2E404 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		96246FA92294FB3800B2E404 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		96246FAC2294FB5300B2E404 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		96246FAD2294FB5300B2E404 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		96246FAE2294FB5300B2E404 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		96246FAF2294FB5300B2E404 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		96246FB02294FB5300B2E404 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		96246FB12294FB5300B2E404 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		96246FB22294FB5300B2E404 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		96246FB32294FB5300B2E404 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		96246FB42294FB5300B2E404 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		96246FB52294FB5300B2E404 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		96246FB72294FB5300B2E404 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		96246FB82294FB5300B2E404 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		96246FB92294FB5300B2E404 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		96246FBA2294FB5300B2E404 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		96246FBB2294FB6900B2E404 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = "OpenGL-Sphere_World-Mirror_Surface/libGLTools.a"; sourceTree = "<group>"; };
+		96246FBD2294FB8300B2E404 /* Marslike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marslike.tga; sourceTree = "<group>"; };
+		96246FBE2294FB8300B2E404 /* MoonLike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = MoonLike.tga; sourceTree = "<group>"; };
+		96246FBF2294FB8300B2E404 /* Marble.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marble.tga; sourceTree = "<group>"; };
+		96246FC32294FBC100B2E404 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9659767A2293E184002DF244 /* OpenGL-Sphere_World-Mirror_Surface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGL-Sphere_World-Mirror_Surface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		965976802293E185002DF244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		965976832293E185002DF244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		965976852293E185002DF244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965976882293E185002DF244 /* OpenGL_Sphere_World_Mirror_Surface.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGL_Sphere_World_Mirror_Surface.entitlements; sourceTree = "<group>"; };
+		9659768D2293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-Sphere_World-Mirror_SurfaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		965976912293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_Sphere_World_Mirror_SurfaceTests.m; sourceTree = "<group>"; };
+		965976932293E186002DF244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965976982293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL-Sphere_World-Mirror_SurfaceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9659769C2293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_Sphere_World_Mirror_SurfaceUITests.m; sourceTree = "<group>"; };
+		9659769E2293E186002DF244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		965976772293E184002DF244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96246FBC2294FB6900B2E404 /* libGLTools.a in Frameworks */,
+				96246FAA2294FB3800B2E404 /* GLUT.framework in Frameworks */,
+				96246FA82294FB3100B2E404 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9659768A2293E186002DF244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965976952293E186002DF244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96246FA62294FB3100B2E404 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96246FBB2294FB6900B2E404 /* libGLTools.a */,
+				96246FA92294FB3800B2E404 /* GLUT.framework */,
+				96246FA72294FB3100B2E404 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96246FAB2294FB5300B2E404 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				96246FAC2294FB5300B2E404 /* GLBatchBase.h */,
+				96246FAD2294FB5300B2E404 /* math3d.h */,
+				96246FAE2294FB5300B2E404 /* GLTriangleBatch.h */,
+				96246FAF2294FB5300B2E404 /* GLBatch.h */,
+				96246FB02294FB5300B2E404 /* GLMatrixStack.h */,
+				96246FB12294FB5300B2E404 /* GLFrame.h */,
+				96246FB22294FB5300B2E404 /* GLFrustum.h */,
+				96246FB32294FB5300B2E404 /* GLGeometryTransform.h */,
+				96246FB42294FB5300B2E404 /* GLShaderManager.h */,
+				96246FB52294FB5300B2E404 /* StopWatch.h */,
+				96246FB62294FB5300B2E404 /* GL */,
+				96246FBA2294FB5300B2E404 /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		96246FB62294FB5300B2E404 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				96246FB72294FB5300B2E404 /* glxew.h */,
+				96246FB82294FB5300B2E404 /* wglew.h */,
+				96246FB92294FB5300B2E404 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		965976712293E184002DF244 = {
+			isa = PBXGroup;
+			children = (
+				9659767C2293E184002DF244 /* OpenGL-Sphere_World-Mirror_Surface */,
+				965976902293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceTests */,
+				9659769B2293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceUITests */,
+				9659767B2293E184002DF244 /* Products */,
+				96246FA62294FB3100B2E404 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9659767B2293E184002DF244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9659767A2293E184002DF244 /* OpenGL-Sphere_World-Mirror_Surface.app */,
+				9659768D2293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceTests.xctest */,
+				965976982293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9659767C2293E184002DF244 /* OpenGL-Sphere_World-Mirror_Surface */ = {
+			isa = PBXGroup;
+			children = (
+				96246FBF2294FB8300B2E404 /* Marble.tga */,
+				96246FBD2294FB8300B2E404 /* Marslike.tga */,
+				96246FBE2294FB8300B2E404 /* MoonLike.tga */,
+				96246FAB2294FB5300B2E404 /* include */,
+				965976802293E185002DF244 /* Assets.xcassets */,
+				965976822293E185002DF244 /* MainMenu.xib */,
+				965976852293E185002DF244 /* Info.plist */,
+				965976882293E185002DF244 /* OpenGL_Sphere_World_Mirror_Surface.entitlements */,
+				96246FC32294FBC100B2E404 /* main.cpp */,
+			);
+			path = "OpenGL-Sphere_World-Mirror_Surface";
+			sourceTree = "<group>";
+		};
+		965976902293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				965976912293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceTests.m */,
+				965976932293E186002DF244 /* Info.plist */,
+			);
+			path = "OpenGL-Sphere_World-Mirror_SurfaceTests";
+			sourceTree = "<group>";
+		};
+		9659769B2293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9659769C2293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceUITests.m */,
+				9659769E2293E186002DF244 /* Info.plist */,
+			);
+			path = "OpenGL-Sphere_World-Mirror_SurfaceUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		965976792293E184002DF244 /* OpenGL-Sphere_World-Mirror_Surface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965976A12293E186002DF244 /* Build configuration list for PBXNativeTarget "OpenGL-Sphere_World-Mirror_Surface" */;
+			buildPhases = (
+				965976762293E184002DF244 /* Sources */,
+				965976772293E184002DF244 /* Frameworks */,
+				965976782293E184002DF244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenGL-Sphere_World-Mirror_Surface";
+			productName = "OpenGL-Sphere_World-Mirror_Surface";
+			productReference = 9659767A2293E184002DF244 /* OpenGL-Sphere_World-Mirror_Surface.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9659768C2293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965976A42293E186002DF244 /* Build configuration list for PBXNativeTarget "OpenGL-Sphere_World-Mirror_SurfaceTests" */;
+			buildPhases = (
+				965976892293E186002DF244 /* Sources */,
+				9659768A2293E186002DF244 /* Frameworks */,
+				9659768B2293E186002DF244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9659768F2293E186002DF244 /* PBXTargetDependency */,
+			);
+			name = "OpenGL-Sphere_World-Mirror_SurfaceTests";
+			productName = "OpenGL-Sphere_World-Mirror_SurfaceTests";
+			productReference = 9659768D2293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		965976972293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965976A72293E186002DF244 /* Build configuration list for PBXNativeTarget "OpenGL-Sphere_World-Mirror_SurfaceUITests" */;
+			buildPhases = (
+				965976942293E186002DF244 /* Sources */,
+				965976952293E186002DF244 /* Frameworks */,
+				965976962293E186002DF244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9659769A2293E186002DF244 /* PBXTargetDependency */,
+			);
+			name = "OpenGL-Sphere_World-Mirror_SurfaceUITests";
+			productName = "OpenGL-Sphere_World-Mirror_SurfaceUITests";
+			productReference = 965976982293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		965976722293E184002DF244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Jace;
+				TargetAttributes = {
+					965976792293E184002DF244 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9659768C2293E186002DF244 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 965976792293E184002DF244;
+					};
+					965976972293E186002DF244 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 965976792293E184002DF244;
+					};
+				};
+			};
+			buildConfigurationList = 965976752293E184002DF244 /* Build configuration list for PBXProject "OpenGL-Sphere_World-Mirror_Surface" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 965976712293E184002DF244;
+			productRefGroup = 9659767B2293E184002DF244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				965976792293E184002DF244 /* OpenGL-Sphere_World-Mirror_Surface */,
+				9659768C2293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceTests */,
+				965976972293E186002DF244 /* OpenGL-Sphere_World-Mirror_SurfaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		965976782293E184002DF244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96246FC12294FB8300B2E404 /* MoonLike.tga in Resources */,
+				96246FC02294FB8300B2E404 /* Marslike.tga in Resources */,
+				965976812293E185002DF244 /* Assets.xcassets in Resources */,
+				965976842293E185002DF244 /* MainMenu.xib in Resources */,
+				96246FC22294FB8300B2E404 /* Marble.tga in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9659768B2293E186002DF244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965976962293E186002DF244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		965976762293E184002DF244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96246FC42294FBC100B2E404 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965976892293E186002DF244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965976922293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		965976942293E186002DF244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9659769D2293E186002DF244 /* OpenGL_Sphere_World_Mirror_SurfaceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9659768F2293E186002DF244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965976792293E184002DF244 /* OpenGL-Sphere_World-Mirror_Surface */;
+			targetProxy = 9659768E2293E186002DF244 /* PBXContainerItemProxy */;
+		};
+		9659769A2293E186002DF244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 965976792293E184002DF244 /* OpenGL-Sphere_World-Mirror_Surface */;
+			targetProxy = 965976992293E186002DF244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		965976822293E185002DF244 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965976832293E185002DF244 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9659769F2293E186002DF244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		965976A02293E186002DF244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		965976A22293E186002DF244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-Sphere_World-Mirror_Surface/OpenGL_Sphere_World_Mirror_Surface.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenGL-Sphere_World-Mirror_Surface/include\"",
+					"\"$(SRCROOT)/OpenGL-Sphere_World-Mirror_Surface/libGLTools.a\"",
+				);
+				INFOPLIST_FILE = "OpenGL-Sphere_World-Mirror_Surface/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-Sphere_World-Mirror_Surface",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Sphere-World-Mirror-Surface";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		965976A32293E186002DF244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGL-Sphere_World-Mirror_Surface/OpenGL_Sphere_World_Mirror_Surface.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OpenGL-Sphere_World-Mirror_Surface/include\"",
+					"\"$(SRCROOT)/OpenGL-Sphere_World-Mirror_Surface/libGLTools.a\"",
+				);
+				INFOPLIST_FILE = "OpenGL-Sphere_World-Mirror_Surface/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGL-Sphere_World-Mirror_Surface",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Sphere-World-Mirror-Surface";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		965976A52293E186002DF244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Sphere_World-Mirror_SurfaceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Sphere-World-Mirror-SurfaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-Sphere_World-Mirror_Surface.app/Contents/MacOS/OpenGL-Sphere_World-Mirror_Surface";
+			};
+			name = Debug;
+		};
+		965976A62293E186002DF244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Sphere_World-Mirror_SurfaceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Sphere-World-Mirror-SurfaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGL-Sphere_World-Mirror_Surface.app/Contents/MacOS/OpenGL-Sphere_World-Mirror_Surface";
+			};
+			name = Release;
+		};
+		965976A82293E186002DF244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Sphere_World-Mirror_SurfaceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Sphere-World-Mirror-SurfaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-Sphere_World-Mirror_Surface";
+			};
+			name = Debug;
+		};
+		965976A92293E186002DF244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JABKNBG655;
+				INFOPLIST_FILE = "OpenGL-Sphere_World-Mirror_SurfaceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jace.OpenGL-Sphere-World-Mirror-SurfaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGL-Sphere_World-Mirror_Surface";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		965976752293E184002DF244 /* Build configuration list for PBXProject "OpenGL-Sphere_World-Mirror_Surface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9659769F2293E186002DF244 /* Debug */,
+				965976A02293E186002DF244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965976A12293E186002DF244 /* Build configuration list for PBXNativeTarget "OpenGL-Sphere_World-Mirror_Surface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965976A22293E186002DF244 /* Debug */,
+				965976A32293E186002DF244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965976A42293E186002DF244 /* Build configuration list for PBXNativeTarget "OpenGL-Sphere_World-Mirror_SurfaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965976A52293E186002DF244 /* Debug */,
+				965976A62293E186002DF244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965976A72293E186002DF244 /* Build configuration list for PBXNativeTarget "OpenGL-Sphere_World-Mirror_SurfaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965976A82293E186002DF244 /* Debug */,
+				965976A92293E186002DF244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 965976722293E184002DF244 /* Project object */;
+}

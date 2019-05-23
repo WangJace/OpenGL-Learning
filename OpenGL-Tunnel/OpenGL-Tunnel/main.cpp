@@ -116,7 +116,7 @@ void ProcessMenu(int value) {
 // 在这个函数里能够在渲染环境中进行任何需要的初始化，在这里设置并初始化纹理对象
 void SetupRC() {
     GLbyte *pBytes;
-    int iWidth, iHeight, iComponents;
+    GLint iWidth, iHeight, iComponents;
     GLenum eFormat;
     GLint iLoop;
     

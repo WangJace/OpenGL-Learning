@@ -21,5 +21,9 @@
 球体世界(综合示例)
 + OpenGL-Pyramid  
 金字塔
++ OpenGL-Tunnel  
+隧道
++ OpenGL-Sphere_World-Mirror_Surface
+球体世界-镜面
 ![代码逻辑图](./代码逻辑图.png)
 <p align="center">代码逻辑图</p>
